@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redrock Guitar Shop</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
     
+    <nav class="main-nav">
+      <a href="#" class="active">Головна</a>
+      <a href="Guitar.html">Гітари</a>
+      <a href="AboutUs.html">Про нас</a>
+    </nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Redrock Guitar Shop" />
+    </div>
+    <div class="cart">Кошик 🛒</div>
+  </header>
+
+  <main>
+    <section class="best-choice">
+      <div class="left">
+        <h1>Найкращий вибір:</h1>
+        <div class="guitar-display">
+          <button class="arrow left" onclick="prevGuitar()">←</button>
+          <div class="guitar-info">
+            <img src="https://i.ibb.co/ZfbDNfL/guitar.png" alt="Harley Benton BS-20BK" />
+            <button class="in-stock">В наявності</button>
+            <p>Harley Benton BS-20BK Rock Series</p>
+            <h2>6 270,86 грн</h2>
+          </div>
+          <button class="arrow right" onclick="nextGuitar()">→</button>
+        </div>
+      </div>
+
+      <div class="right">
+        
+        <img src="images/redrock.png" alt="Redrock Poster" />
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
