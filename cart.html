@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кошик</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Redrock Guitar Shop" />
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Головна</a>
+            <a href="Guitar.html">Гітари</a>
+            <a href="AboutUs.html">Про нас</a>
+        </nav>
+        <a href="cart.html" class="cart">🛒 Кошик</a>
+    </header>
+
+    <main>
+        <h1>Ваш кошик</h1>
+        <div id="cart-items"></div>
+
+        <div id="order-form-container" style="display: none;">
+            <h2>Оформлення замовлення</h2>
+            <form id="order-form">
+                <label>Ім’я:<br>
+                    <input type="text" name="name" required />
+                </label><br><br>
+
+                <label>Телефон:<br>
+                    <input type="tel" name="phone" required />
+                </label><br><br>
+
+                <label>Email:<br>
+                    <input type="email" name="email" required />
+                </label><br><br>
+
+                <button type="submit">Оформити замовлення</button>
+            </form>
+            <p id="confirmation-message" style="color: green; font-weight: bold;"></p>
+        </div>
+    </main>
+    <!-- Модальне вікно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <p>Ваше замовлення прийнято.</p>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

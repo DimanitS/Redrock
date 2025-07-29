@@ -1,0 +1,38 @@
+[
+  {
+    "img": "images/guitar.jpg",
+    "name": "Harley Benton BS-20BK Rock Series",
+    "price": "6270.86 грн",
+    "stock": "В наявності"
+  },
+  {
+    "img": "images/guitar2.jpg",
+    "name": "Ibanez RG450DX",
+    "price": "25890.87 грн",
+    "stock": "Під замовлення"
+  },
+  {
+    "img": "images/guitar3.jpg",
+    "name": "Fender Stratocaster Player",
+    "price": "25300.00 грн",
+    "stock": "В наявності"
+  },
+  {
+    "img": "images/guitar4.jpg",
+    "name": "Yamaha Pacifica 112V",
+    "price": "15000.00 грн",
+    "stock": "В наявності"
+  },
+  {
+    "img": "images/guitar5.jpg",
+    "name": "ESP LTD EC-1000",
+    "price": "31900.00 грн",
+    "stock": "Немає в наявності"
+  },
+  {
+    "img": "images/guitar6.jpg",
+    "name": "PRS SE Custom 24",
+    "price": "28900.00 грн",
+    "stock": "В наявності"
+  }
+]

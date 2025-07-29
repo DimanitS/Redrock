@@ -21,23 +21,56 @@ const guitars = [
 
 let currentIndex = 0;
 
-
 const imgEl    = document.getElementById("guitar-img");
 const nameEl   = document.getElementById("guitar-name");
 const priceEl  = document.getElementById("guitar-price");
 const stockEl  = document.getElementById("stockStatus");
 const prevBtn  = document.getElementById("prevBtn");
 const nextBtn  = document.getElementById("nextBtn");
+const cartCounter = document.querySelector(".cart");
+let addToCartBtn = document.querySelector(".add-to-cart");
 
+function getCart() {
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function setCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function updateCartCounter() {
+  const count = getCart().length;
+  cartCounter.textContent = `🛒 Кошик (${count})`;
+}
+
+function addToCart(product) {
+  const cart = getCart();
+  cart.push(product);
+  setCart(cart);
+  updateCartCounter();
+}
 
 function updateGuitar(index) {
   const g = guitars[index];
-  imgEl.src       = g.img;
-  nameEl.textContent  = g.name;
-  priceEl.textContent = g.price;
-  stockEl.textContent = g.stock;
-}
 
+  // Анімація fade
+  imgEl.classList.add("fade-out");
+
+  setTimeout(() => {
+    imgEl.src = g.img;
+    nameEl.textContent = g.name;
+    priceEl.textContent = g.price;
+    stockEl.textContent = g.stock;
+    imgEl.classList.remove("fade-out");
+
+    // Обновити кнопку
+    addToCartBtn = document.querySelector(".add-to-cart");
+    if (addToCartBtn) {
+      addToCartBtn.onclick = () => addToCart(g);
+    }
+
+  }, 300);
+}
 
 prevBtn.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + guitars.length) % guitars.length;
@@ -50,4 +83,5 @@ nextBtn.addEventListener("click", () => {
 });
 
 
+updateCartCounter();
 updateGuitar(currentIndex);
