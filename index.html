@@ -8,16 +8,15 @@
 </head>
 <body>
   <header>
-    
+    <div class="logo">
+      <img src="images/logo.png" alt="Redrock Guitar Shop" />
+    </div>
     <nav class="main-nav">
       <a href="#" class="active">Головна</a>
       <a href="Guitar.html">Гітари</a>
       <a href="AboutUs.html">Про нас</a>
     </nav>
-    <div class="logo">
-      <img src="images/logo.png" alt="Redrock Guitar Shop" />
-    </div>
-    <div class="cart">Кошик 🛒</div>
+    <div class="cart">🛒 Кошик</div>
   </header>
 
   <main>
@@ -25,19 +24,17 @@
       <div class="left">
         <h1>Найкращий вибір:</h1>
         <div class="guitar-display">
-          <button class="arrow left" onclick="prevGuitar()">←</button>
+          <button class="arrow arrow-left" id="prevBtn">←</button>
           <div class="guitar-info">
-            <img src="images/guitar.jpg" alt="Harley Benton BS-20BK" />
-            <button class="in-stock">В наявності</button>
-            <p>Harley Benton BS-20BK Rock Series</p>
-            <h2>6 270,86 грн</h2>
+            <img id="guitar-img" src="images/guitar.jpg" alt="Гітара" />
+            <button class="in-stock" id="stockStatus">В наявності</button>
+            <p id="guitar-name">Harley Benton BS-20BK Rock Series</p>
+            <h2 id="guitar-price">6 270,86 грн</h2>
           </div>
-          <button class="arrow right" onclick="nextGuitar()">→</button>
+          <button class="arrow arrow-right" id="nextBtn">→</button>
         </div>
       </div>
-
       <div class="right">
-        
         <img src="images/redrock.png" alt="Redrock Poster" />
       </div>
     </section>

@@ -1,116 +1,117 @@
-
 body {
-  font-family: 'Arial', sans-serif;
-  background: #fff;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
   color: #000;
 }
 
-/* ---------- HEADER ---------- */
+/* Хедер */
 header {
-  background-color: #111;
+  background-color: #1a1a1a;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 60px;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-left: -5px;
+   font-size: 30px;
+   margin-top: -10px
 }
 
 .logo img {
-  height: 60px;
-}
-
-.main-nav {
-  display: flex;
-  gap: 30px;
+  height: 50px;
+  margin-left: -10px; 
 }
 
 .main-nav a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
-  transition: border 0.3s;
+  margin: 0 15px;
+  font-size: 18px;
+  position: relative;
+ margin-left: -px;
 }
 
-.main-nav a.active {
-  border-color: white;
+.main-nav a.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: white;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  margin-top: -10px
+  
 }
 
 .cart {
-  color: white;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  font-size: 16px;
+  
 }
 
-/* ---------- MAIN SECTION ---------- */
+
 main {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px;
+  padding: 40px;
 }
+
 
 .best-choice {
   display: flex;
-  width: 100%;
-  gap: 60px;
+  justify-content: space-between;
+ 
+  flex-wrap: wrap;
+  margin-left: 200px;
 }
 
-/* ---------- LEFT BLOCK ---------- */
-.left {
-  flex: 1;
-}
 
 .left h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  margin-left: 10px;
 }
 
 .guitar-display {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-top: 30px;
   gap: 30px;
+  max-width: 100%;
 }
 
 .arrow {
+  font-size: 24px;
   background: none;
   border: none;
-  font-size: 36px;
   cursor: pointer;
-  color: #111;
-  padding: 10px;
-  transition: transform 0.2s;
-}
-
-.arrow:hover {
-  transform: scale(1.2);
 }
 
 .guitar-info {
   text-align: center;
-  max-width: 260px;
+  max-width: 300px;
 }
 
 .guitar-info img {
-  height: 280px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
 }
 
 .in-stock {
-  background-color: #a00;
+  background-color: darkred;
   color: white;
   border: none;
-  border-radius: 20px;
-  padding: 8px 16px;
-  margin: 12px 0;
-  font-size: 14px;
-  cursor: default;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-radius: 15px;
 }
 
-/* ---------- RIGHT BLOCK ---------- */
+
 .right img {
-  max-width: 400px;
-  height: auto;
+  width: 700px; 
+ 
+  object-fit: contain;
   border-radius: 10px;
+  margin-top: -10px;
+  margin-left: 150px;
 }
+
