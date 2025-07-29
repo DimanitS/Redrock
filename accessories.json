@@ -1,0 +1,29 @@
+[
+  {
+    "img": "images/chorus.jpg",
+    "name":"Boss CE-2w Chorus pedal ",
+
+    "price": "5 564,39 грн"
+  },
+  {
+    "img": "images/distorion.jpg",
+    "name": "BOSS DS-1 Distortion Pedal",
+    "price": "3 725,72 грн"
+  },
+  {
+    "img": "images/pick.webp",
+    "name": "Fender Red Pick Medium (набір)",
+    "price": "241,93 грн"
+  },
+  {
+    "img": "images/green.jpg",
+    "name": "Ernie Ball 3221 3 Pack",
+    "price": "774,18 грн"
+  },
+  {
+    "img": "images/fender.jpg",
+    "name": "Fender Champion II 25",
+    "price": "6 725,65 грн"
+  }
+
+]
